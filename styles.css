@@ -22,7 +22,6 @@ body {
 .hero {
   text-align: center;
   padding: 4rem 1rem 2rem;
-  position: relative;
 }
 
 .logo-placeholder {
@@ -53,29 +52,32 @@ body {
 .btn {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 0.75rem 1.2rem;
-  font-size: 1rem;
+  gap: 6px;
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   text-decoration: none;
   color: var(--text-color);
-  transition: 0.3s ease;
-  box-shadow: 0 0 15px var(--primary-color);
+  transition: all 0.3s ease;
   background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px var(--primary-color);
 }
 
 .btn img {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
+  filter: brightness(1.2);
 }
 
 .btn.telegram:hover {
-  background-color: #0088cc;
+  background-color: rgba(0, 136, 204, 0.2);
+  box-shadow: 0 0 15px #0088cc;
 }
 
 .btn.twitter:hover {
-  background-color: #000000;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 15px #ffffff;
 }
 
 .telegram-post {
