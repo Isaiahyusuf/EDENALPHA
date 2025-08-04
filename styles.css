@@ -1,10 +1,4 @@
-:root {
-  --primary-color: #00ffcc;
-  --bg-color: #0d0d0d;
-  --text-color: #ffffff;
-  --accent-color: #ff0055;
-}
-
+/* Base Reset */
 * {
   margin: 0;
   padding: 0;
@@ -12,36 +6,36 @@
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: #0b0b0c;
   font-family: 'Orbitron', sans-serif;
-  overflow-x: hidden;
-  padding: 0 1rem;
+  color: #ffffff;
 }
 
+/* Hero Section */
 .hero {
   text-align: center;
   padding: 4rem 1rem 2rem;
 }
 
-.logo-placeholder {
+.logo {
   font-size: 4rem;
   margin-bottom: 1rem;
 }
 
-.headline {
-  font-size: 2.2rem;
-  color: var(--primary-color);
-  text-shadow: 0 0 10px var(--primary-color);
+.hero h1 {
+  font-size: 2.5rem;
+  color: #00ffd5;
+  text-shadow: 0 0 10px #00ffd5;
 }
 
-.subtext {
+.hero p {
   font-size: 1rem;
+  color: #bdbdbd;
   margin-top: 0.5rem;
-  color: #bbbbbb;
 }
 
-.button-group {
+/* Button Section */
+.buttons {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
@@ -50,38 +44,34 @@ body {
 }
 
 .btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.1rem;
+  color: white;
+  text-decoration: none;
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 0.6rem 1rem;
   font-size: 0.95rem;
-  border: none;
-  border-radius: 6px;
-  text-decoration: none;
-  color: var(--text-color);
-  transition: all 0.3s ease;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 0 10px var(--primary-color);
+  transition: 0.3s;
+  box-shadow: 0 0 12px #00ffd5;
 }
 
 .btn img {
-  width: 16px;
-  height: 16px;
-  filter: brightness(1.2);
+  width: 18px;
+  height: 18px;
 }
 
-.btn.telegram:hover {
-  background-color: rgba(0, 136, 204, 0.2);
-  box-shadow: 0 0 15px #0088cc;
+.btn:hover {
+  background-color: #00ffd5;
+  color: #000;
+  box-shadow: 0 0 16px #00ffd5;
 }
 
-.btn.twitter:hover {
-  background-color: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 0 15px #ffffff;
-}
-
-.telegram-post {
-  margin: 3rem 0;
-  display: flex;
-  justify-content: center;
+/* Telegram Section */
+.telegram-section {
+  margin: 3rem auto;
+  max-width: 600px;
+  padding: 0 1rem;
 }
