@@ -1,0 +1,85 @@
+:root {
+  --primary-color: #00ffcc;
+  --bg-color: #0d0d0d;
+  --text-color: #ffffff;
+  --accent-color: #ff0055;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Orbitron', sans-serif;
+  overflow-x: hidden;
+  padding: 0 1rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+  position: relative;
+}
+
+.logo-placeholder {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.headline {
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  text-shadow: 0 0 10px var(--primary-color);
+}
+
+.subtext {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #bbbbbb;
+}
+
+.button-group {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.75rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: 0.3s ease;
+  box-shadow: 0 0 15px var(--primary-color);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.btn.telegram:hover {
+  background-color: #0088cc;
+}
+
+.btn.twitter:hover {
+  background-color: #000000;
+}
+
+.telegram-post {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+}
